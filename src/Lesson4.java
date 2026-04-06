@@ -1,6 +1,5 @@
 
 import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
 import javax.swing.*;
 
 public class Lesson4 {
@@ -10,9 +9,7 @@ public class Lesson4 {
         // girilen metnin kelime ve karakter sayısı hesaplama
         JFrame jf = new JFrame();
         jf.setSize(500, 600);
-
         jf.setLocation(100, 200);
-
         jf.getContentPane().setLayout(new FlowLayout());
 
         JButton btn1 = new JButton("Gönder");
@@ -31,7 +28,7 @@ public class Lesson4 {
         jf.getContentPane().add(lblmetin);
         // jf.getContentPane().add(pass);
 
-        btn1.addActionListener((ActionEvent e) -> {
+        btn1.addActionListener(e -> {
             String text = ar1.getText().trim();
             String[] words = text.split("\\s+");
 

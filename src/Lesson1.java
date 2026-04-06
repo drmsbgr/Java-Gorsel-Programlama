@@ -36,7 +36,7 @@ public class Lesson1 {
         jf.getContentPane().add(btn2);
 
         JButton btn3 = new JButton("İsim al");
-        btn3.addActionListener((ActionEvent e) -> {
+        btn3.addActionListener(e -> {
             String isim = JOptionPane.showInputDialog("Lütfen isminizi giriniz");
             JOptionPane.showMessageDialog(null, isim);
         });
